@@ -1,6 +1,6 @@
 # DiffusionAct: Controllable Diffusion Autoencoder for One-shot Face Reenactment
 
-Authors official PyTorch implementation of the **[DiffusionAct: Controllable Diffusion Autoencoder for One-shot Face Reenactment]()**. If you use this code for your research, please [**cite**](#citation) our paper.
+Authors official PyTorch implementation of the **[DiffusionAct: Controllable Diffusion Autoencoder for One-shot Face Reenactment](https://arxiv.org/abs/2403.17217)**. If you use this code for your research, please [**cite**](#citation) our paper.
 
 <p align="center">
 <img src="images/architecture.png" style="width: 750px"/>
@@ -17,7 +17,7 @@ orientation and the facial expressions. Our method allows one-shot, self, and cr
 We compare against state-of-the-art GAN-, StyleGAN2-, and diffusion-based methods, showing better or on-par reenactment performance. 
 
 
-<a href=""><img src="https://img.shields.io/badge/arXiv--b31b1b.svg" height=22.5></a>
+<a href="https://arxiv.org/abs/2403.17217"><img src="https://img.shields.io/badge/arXiv-2403.17217-b31b1b.svg" height=22.5></a>
 <a href="https://stelabou.github.io/diffusionact/"><img src="https://img.shields.io/badge/Page-Demo-darkgreen.svg" height=22.5></a>
 
 
