@@ -26,7 +26,39 @@ We compare against state-of-the-art GAN-, StyleGAN2-, and diffusion-based method
 </p>
 
 
-# Code is coming soon
+# Installation
+
+* Python 3.5+ 
+* Linux
+* NVIDIA GPU + CUDA CuDNN
+* Pytorch (>=1.5)
+
+We recommend running this repository using [Anaconda](https://docs.anaconda.com/anaconda/install/).  
+
+```
+conda env create -f environment.yml
+```
+
+# Pretrained Models
+
+|  Path | Description | Destination Folder |
+| :--- | :---------- | :------------------ |
+|[DiffAE](https://drive.google.com/file/d/1QKmwW9-yHcC91_f-Mq4maQLdgFrffmdW/view?usp=sharing)  | [DiffAE](https://github.com/phizaz/diffae) trained on FFHQ dataset. | Extract ffhq256_autoenc.zip under `./checkpoints`.
+|[DiffusionAct-net](https://drive.google.com/file/d/1_pBdrega9Q38BYKx2-V1RavTYyG2BSpv/view?usp=sharing)  | Our model  trained on VoxCeleb1 dataset. | Save under `./pretrained_models`.
+|[face-detector](https://drive.google.com/file/d/1IWqJUTAZCelAZrUzfU38zK_ZM25fK32S/view?usp=share_link)  | Pretrained face detector taken from [face-alignment](https://github.com/1adrianb/face-alignment). | Save under `./pretrained_models`.
+|[gaze-estimator](https://drive.google.com/file/d/1OkzpEkAbI8WugxO7l514JwkYoWqhcnkT/view?usp=sharing) | Pretrained gaze estimator taken from [ETH-XGaze](https://github.com/xucong-zhang/ETH-XGaze). | Save under `./pretrained_models`.
+|[EMOCA model](https://drive.google.com/file/d/1iVNqIvNEHYKtnqsk6h4m7kRXLn5wqGNf/view?usp=sharing)  | Pretrained model taken from [EMOCA](https://github.com/radekd91/emoca). | Extract EMOCA.zip under `./pretrained_models`.
+
+
+
+# Inference 
+
+Please download and place all required pretrained models in their specified directories as listed above.
+
+Given as input a source (.png or .jpg) and a target frame (.png or .jpg), reenact the source face. 
+```
+python run_inference.py --source_path ./demo_run/source.png --target_path ./demo_run/target.png --output_path ./demo_run/results 
+```
 
 
 ## Citation
@@ -35,9 +67,8 @@ We compare against state-of-the-art GAN-, StyleGAN2-, and diffusion-based method
 @InProceedings{bounareli2024diffusionact,
     author    = {Bounareli, Stella and Tzelepis, Christos and Argyriou, Vasileios and Patras, Ioannis and   Tzimiropoulos, Georgios},
     title     = {DiffusionAct: Controllable Diffusion Autoencoder for One-shot Face Reenactment},
-    journal   = {arXiv},
-    year      = {2024},
+    journal   = {IEEE Conference on Automatic Face and Gesture Recognition},
+    year      = {2025},
 }
 ```
-
 

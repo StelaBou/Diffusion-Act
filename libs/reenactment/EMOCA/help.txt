@@ -1,0 +1,2 @@
+1. I change the path for models: def replace_asset_dirs(cfg, output_dir : Path, ): # -> load.py
+                                        asset_dir = Path('../pretrained_models/EMOCA') 
